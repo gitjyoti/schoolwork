@@ -1,0 +1,46 @@
+/*     Create jobs.html. This Jobs page lists and describes the jobs availabe. Use pseudoclasses.
+   You must use the following:    Flex box model   Pseudoclasses    @media query   multimedia*/
+
+/*the body tag: a background color, text color, font family, font size,font style and font weight */
+	body{background-color:#FFE6FF; color:black;font-size: 16px;font-family:"times"; font-weight: bold;font-style: normal; }
+	
+	/* Configure the h1 heading to have a background color with a text color.*/
+	h1{font-size: 200%; color: darkblue; background-color:MistyRose ;} 
+	h1{background-image: url("logo.jpg");padding: 38px; background-size:10%	;background-repeat: no-repeat;margin:20px;background-position:35% 10%}
+
+	/* Hyperlinks:different background color and text decoration. When moving the mouse over the link, a different color is shown*/
+	a{color:green;background-color: peachpuff;font-size: 20px;} a:hover{color: darkgreen;background-color: whitesmoke;font-size: 25px;}
+	a:visited{background-color:peachpuff; color:peru; }
+	h4{color:SteelBlue  ;} h3{text-align: center;}
+
+	li{display: inline;margin: 1% 2%;}
+	.aside{color: salmon; background-color:lightpink;}
+
+	#image{text-align: center;}
+
+	.rights{height: 450px;width:95%; align: right; border-style: groove;border-radius: 15px;border-width: 10px;margin: 0px 20px;border-color: blue}
+table{cell-padding:5px;align:center;}
+.prod{height: 500;width: 50%;}
+
+#toright{left-padding:500px;}
+
+form::first-letter{color:yellow}
+/*    Redesign the entire site to use the Flex Box Model.   Update the navigation to be able to be viewed on mobile devices.*/
+#entire {
+    height: 400px; width: 700px;
+    background: -webkit-linear-gradient(lightblue, blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(green, blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(green, blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(green, blue); /* Standard syntax (must be last) */
+}
+
+@media screen and (max-width:600px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+/* Pseudo-classes selected link */
+a:active {
+    background-color: green;
+}

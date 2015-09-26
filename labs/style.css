@@ -1,0 +1,10 @@
+/** Use the external style (style.css) to contain an ID selector that has a different background color, text size and text color. In the content, 
+use this ID with a span.    Use any other tags learned so far.**/
+	body{background-color: seashell}
+    p{text-align: justify;}
+    h1 {text-align: center;font-family: serif;font-size: 40px} h4{text-align: center;}
+    h1:hover{background-color:seashell; font-size: 45px;}
+    #bottom{background:pink; font-size: large;color:navy;font-style: italic;}
+    a:hover{font-size: 20px; background-color: lightblue;}
+    #link1{color:magenta;}
+    #link2{color: chocolate;}

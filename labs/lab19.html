@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab 19n</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style19.css" media="screen">
+<!-- Create a new page named lab19.html.Research about sushi. How to order? What are the ways that grocery store sushi is different from 
+serious sushi?Do the following:    Use tranform.    Use animation.  -->
+ <style type="text/css">
+ 			body {background-color:ghostwhite;color: orange;}
+ 			#banner h1 {	text-align: center;background-color: #E6B2FF;color:#663300;}
+            #sushi-intro {width:200px;height:200px;padding:20px;}
+            #sushi-intro:hover {transform:rotate(45deg);}
+            #sushi-plate-scroll {width:300px;height:300px;padding:20px;animation: scrolling-sushi 5s infinite;}
+            
+			@keyframes scrolling-sushi{
+				0%{background-color: #D1FFFF;imation-timing-function:ease-in;ransform:translate3d(0px, 0px, 0px);}
+				40%{background-color: #FFD1FF;animation-timing-function:ease-out;transform:translate3d(1000px, 0px, 0px);}
+				95%{background-color: #B2FFF0;transform:translate3d(0px, 0px, 0px);}
+			}
+            #comparison {background-color: red;-webkit-animation-name: example; -webkit-animation-duration:5s; animation-name: example;
+    			animation-duration: 3s;animation-iteration-count: infinite;}
+            @-webkit-keyframes example {from {background-color: pink;}		to {background-color: yellow;}		}
+
+			/* Standard syntax */
+			@keyframes example {from {background-color: red;}   	to {background-color:gray;}		}
+	    </style>
+    </head>	
+    <body>
+    	<header id="banner">
+		    <h1> Sushi - Japanese Food</h1>
+	    </header>
+	    <section>
+            <article>
+            	<h2> What is Sushi? </h2>
+            	<p>
+            		Sushi is a Japanese food consisting of cooked vinegared rice combined with other ingredients seafood, vegetables and sometimes tropical fruits. Ingredients and forms of sushi presentation vary widely, but the ingredient which all sushi have in common is rice. Sushi can be prepared with either brown or white rice. Sushi is often prepared with raw seafood, but some common varieties of sushi use cooked ingredients or are vegetarian. Raw fish (or occasionally other meat) sliced and served without rice is called "sashimi". <br />
+            		<img id="sushi-intro" src="http://www.house-sushi.com/wp-content/uploads/2013/12/sushi.jpg" alt="Sushi" />
+            	</p>
+            </article>
+            <article id="comparison">
+            	<h2> How to order Sushi? </h2>
+            	<p>
+            		<blockquote cite="http://matadornetwork.com/abroad/how-to-order-sushi-like-a-ninja/">
+	            		Here are three Japanese phrases that refer to different ways to order sushi. <br />
+	            		<b> Okimari: </b> <i> "It has been decided." </i> <br />
+	            		This refers to set meals and sushi samplers, menu items that have a fixed price and require very little thought. Still, there is usually a good variety of fish to be had.
+	            		<br />
+	            		<b> Okonomi: </b> <i> "As I like it." </i> <br />
+	            		If you have been around the block with sushi restaurants and know what suits your palette, go ahead and order fish-by-fish. Most venues will present only two pieces of sushi for each order, the idea is to appreciate the variety.
+	            		<br />
+	            		<b> Omakase: </b> <i> "Please decide for me." </i> <br />
+	            		Saying "omakase" while sitting down at the sushi bar is probably the smartest decision you can make. Sushi chefs know which fish are the tastiest to have arrived that day, and omakase gives them an opportunity to show-off their skills and experiment with presentation.The only downside of omakase is the expense: if you ask the chef to choose whats best, he will most likely assume you are not concerned with the price.
+						Many chefs will use less rice for an omakase order, so you may eat more fish without filling up so quickly.
+					</blockquote>
+            	</p>
+            	<br />
+            </article>
+            <article >
+            	<h2> Grocery store vs Restaurant Sushi </h2>
+            	<p>
+            		Following are some of the reasons why grocery store sushi does not taste as good as restaurant ones:
+            		<br />
+            		<ul>
+            			<li> Thr rice is not cooked right. Sushi rice should be served close to body temperature and kept slightly warm until being served which is not possible in grocery store</li>
+            			<li> Raw fish loses flavor when chilled </li>
+            			<li> Grocery store fishes are not as meticulously graded on taste and texture like high end sushi bars </li>
+            			<li> Grocery store sushi is oxidised </li>
+            			<li> Freezing seaweed makes it lose its crisp and dry texture </li>
+            			<li> Wasabi sauce is not fresh </li>
+            		</ul>
+            	</p>
+            	<br />
+            	<img id="sushi-plate-scroll" src="http://alexgurghis.com/themes/wpcook/wp-content/uploads/2014/04/sushi.jpg" alt="Sushi plate" />
+            </article>
+	 	</section>
+	 	</div>
+	<div align="center">
+	<h4 span style="color:blue" ><a href="http://dblab.itu.edu/home/kaushik/labs/index.html">Back to Labs Menu</a></h4>
+	<h4 align="center">&copy; Jyoti Kaushik	</h4>
+</body>
+</html>

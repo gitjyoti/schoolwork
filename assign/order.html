@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8"/>
+	<html lang="en-US">
+	<meta name="author" content="Jyoti" >
+	 
+	<title>JKDesigns</title>
+<!-- Use CSS3 properties for the homepage, existing pages and the 2 new pages. Use CSS properties, pseudo-elements, colors and gradients as appropriate.
+ -->
+		
+	<!-- internal style -->
+<link rel ="stylesheet" href="style.css">	
+<style type="text/css">
+	h4::first-line {
+	    color:green;
+	    font-variant: small-caps;background-color: yellow;
+}</style>
+</head>
+<body>
+	<header>
+		<div class="entire">	
+		<h1 align="center">JK Interior Design</h1>
+	</header>
+		<div>	
+				<aside class="aside"><h4 align="center"><i><u>Order Your Item:</u></i></h4></aside>
+			<div id="list1" style="text-align":"center">
+			<nav>
+					<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="new.html">New</a></li>
+				<li><a href="support.html">Support</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="product.html">Product</a></li>
+				<li><a href="order.html">Order</a></li>
+				<li><a href="job.html">Job</a></li>
+				<li><a href="multi.html">Multimedia</a></li><hr>
+			</nav>
+			
+		<div class="container">
+		<section>
+			<div id="idea">
+			<aside class="aside"><h3 align="center">Order Here:</h3></aside>
+			<h4  align="center"><u>JK Interior: Available 24/7 </u></h4>
+		
+		 <section id="section1">
+		<form>
+			<h2>Customer Information</h2>
+			<table cellspacing="10" cellpadding="10">
+			<tr>
+				<td width="40%"><label for="fname">First Name:</label></td>
+				<td><input type="text" class="text" name="fname" id="fname" autofocus placeholder="Your First Name"></td>
+
+			</tr>
+			<tr>
+				<td width="40%"><label for="lname">Last Name:</label></td>
+				<td><input type="text" class="text" name="lname" id="lname" autofocus placeholder="Your Last Name"></td>
+
+			</tr>
+			<tr>
+				<td width="40%"><label for="strname">Street Name: </label></td>
+				<td><input type="text" class="text" name="strname" id="strname" placeholder="Your Street Name"></td>
+
+			</tr>
+			<tr>
+				<td width="40%"><label for="city">City:</label></td>
+				<td><input type="text" class="text" name="city" id="city" autofocus placeholder="Your city Name"></td>
+
+			</tr>
+
+			<tr>
+				<td width="40%"><label for="state">State:</label></td>
+				<td><input type="text" class="text" name="state" id="state" autofocus placeholder="Your state"></td>
+
+			</tr>
+
+			<tr>
+				<td width="40%"><label for="zip">Zip:</label></td>
+				<td><input type="text" class="text" name="zip" id="zip" autofocus placeholder="Zip Code"></td>
+
+			</tr>
+
+			<tr>
+				<td><label for="phone">Telephone Phone: </label>  </td>
+				<td><input type="tel"  name="phone" id="phone"></td>
+
+			</tr>
+
+			<tr>
+				<td><label for="email">Your Email: </label></td>
+				<td><input type="email" name="email" id="email" class="text" placeholder="Your email"></td>
+
+			</tr>
+
+			<tr>
+				<td><label for="crnum">Credit Card Number: </label>  </td>
+				<td><input type="text"  name="crnum" id="crnum" maxlength="16"></td>
+
+			</tr>
+
+			<tr>
+				<td><label for="nearcounty"> Credit Card Type:</label></td>
+				<td><input type="text" name="crdtype" id="crdtype" list="crtype"></td>
+			</tr>
+				<datalist id="crtype">
+					<option value="American Express">
+					<option value="MasterCard">
+					<option value="Visa">
+					<option value="Discover">
+					<option value="maestro">
+				</datalist>
+
+			<tr>
+				<td><label for="expdate"> Credit Card Expiration Date:</label></td>
+				<td><input type="month" name="expdate" id="expdate"><br></td>
+
+			</tr>
+			<tr>
+				<td><label> Add Your Comments:</label><br></td>
+				<td><textarea name="comments" id="interestcomm" rows="5" cols="70">	</textarea></td>
+			</tr>
+
+			</table>
+		</form>
+		</section>
+
+		<section id="section2">
+		<form id="prodinfo">
+			<h2>Product Information</h2>
+
+			<table cellspacing="5" cellpadding="5">
+			<tr>
+				<th width="10%"><label for="category">Category</label></th>
+				<th width="10%"><label for="desc">Description</label></th>
+				<th width="10%"><label for="unpri">Unit Price</label></th>
+				<th width="10%"><label for="quantity">Quantity</label></th>
+				<th width="10%"><label for="ttlpr">Total Price</label></th>
+
+
+			</tr>
+			<tr>
+				<td>Living Room</td>
+				<td>Decoration: Product #21123 </td>
+				<td> $411 </td>
+				<td><input type="text" name="quantity" id="quantitycard" placeholder=" No. of Products"></td>
+				<td><input type="text" name="ttlpr" id="ttlprcard" placeholder="Total price"></td>
+			</tr>
+
+
+			<tr>
+				<td>Bedroom</td>
+				<td>Decoration :Product #21128</td>
+				<td> $223	</td>
+				<td><input type="text" name="quantity" id="quantityfr" placeholder="No. of Products"></td>
+				<td><input type="text" name="ttlpr" id="ttlprfr" placeholder="Total price"></td>
+			</tr>
+
+			<tr>
+			<th colspan="5" bgcolor="lightblue" align="right">Subtotal:
+			<input type="text" name="subttlpr" id="subttlpr" placeholder="Total price"></th>
+			</tr>
+
+			<tr>
+				<td>Kitchen</td>
+				<td>Utility Products</td>
+				<td> $190 </td>
+				<td><input type="text" name="quantity" id="quantitywcand" placeholder="No. of Products"></td>
+				<td><input type="text" name="ttlpr" id="ttlprwcand" placeholder="Total price"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>Cabinet	</td>
+				<td> $350	</td>
+				<td><input type="text" name="quantity" id="quantitywfr" placeholder="No. of Products"></td>
+				<td><input type="text" name="ttlpr" id="ttlprwfr" placeholder="Total price"></td>
+			</tr>
+
+
+			<tr>
+			<th colspan="5" bgcolor="lightblue" align="right">Subtotal:
+			<input type="text" name="subttlwoo" id="subttlwoo" placeholder="Total price"></th>
+			</tr>
+
+			<tr>
+			<th colspan="5" bgcolor="#A3C2FF" align="right">Total:
+			<input type="text" name="total" id="total" placeholder="Total price"></th>
+			</tr>
+
+			</table>
+				<input class="button" type="submit" name="SubmitButton" value="Submit">
+				<input class="button" type="reset" name="ResetButton" value="Reset">
+			</form>
+		</section>
+		<hr>
+			</p><br><br><hr>
+		</section>
+			</div>
+			<div id="list2">
+					<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="new.html">New</a></li>
+				<li><a href="support.html">Support</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="product.html">Product</a></li>
+				<li><a href="order.html">Order</a></li>
+				<li><a href="job.html">Job</a></li>
+				<li><a href="multi.html">Multimedia</a></li><hr>
+			</div>
+		<div>
+		<footer></footer><p align="center">&copy;Jyoti Kaushik</p></footer>
+		</div>
+		</div>
+</body>
+</html>

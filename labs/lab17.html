@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Lab 17</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Research evil twins and other possible risks you can think of related to using a Wi-Fi hotspot. For each risk, identify a possible precaution that can be taken to guard against that risk. If you have ever used a Wi-Fi hotspot, were you at risk? Knowing what you do now, would you take any new precautions the next time you use one? Is it possible to surf safely using a Wi-Fi hotspot?Do the following:
+    Use CSS for printing and making links printable.Use viewport meta tag and CSS media queries to create the page for mobile devices. Show the differences in background color and font color and size with different screen sizes. -->
+        <style type="text/css">
+            @media print {
+                a:after {
+                    content:" (" attr(href) ") ";
+                    font-size:0.4em;
+                    font-weight:normal;
+                }
+            }
+            @media screen and (max-width: 320px) {      
+	        .security-issues {
+		    display: -webkit-box;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: -moz-flex;
+		    display: -webkit-flex;
+		    display: flex;
+		    flex-direction: column;
+		    background: salmon;
+		    color: #6A0888;
+                    font-size: 0.4em;
+		}
+                .precautions {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -moz-flex;
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-direction: column;
+                    background: black;
+                    color: #013ADF;
+                    font-size: 0.4em;
+                }
+	    }
+	    @media screen and (max-width: 360px) {
+                .security-issues {
+		    display: -webkit-box;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: -moz-flex;
+		    display: -webkit-flex;
+		    display: flex;
+		    flex-direction: column;
+		    background: #F6CED8;
+		    color: #DF3A01;
+                    font-size: 0.5em;
+		}
+                .precautions {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -moz-flex;
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-direction: column;
+                    background: #E6F8E0;
+                    color: #F5D0A9;
+                    font-size: 0.5em;
+                }	
+	    }
+	    @media screen and (max-width: 400px) {
+                .security-issues {
+		    display: -webkit-box;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: -moz-flex;
+		    display: -webkit-flex;
+		    display: flex;
+		    flex-direction: column;
+		    background: #F6CEE3;
+		    color: #A9A9F5;
+                    font-size: 0.6em;
+		}
+                .precautions {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -moz-flex;
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-direction: column;
+                    background: #EFFBF2;
+                    color: #A4A4A4;
+                    font-size: 0.6em;
+                }	
+	    }
+            @media screen and (max-width: 600px) {
+                .security-issues {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -moz-flex;
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-direction: row;
+                    background: #CEF6EC;
+                    color: #F78181;
+                    font-size: 0.7em;
+                }
+                .precautions {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -moz-flex;
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-direction: row;
+                    background: #F6CEE3;
+                    color: #0040FF;
+                    font-size: 0.7em;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                .security-issues {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -moz-flex;
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-direction: row;
+                    background: #ECCEF5;
+                    color: #F5A9A9;
+                    font-size: 0.8em;
+                }
+                .precautions {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -moz-flex;
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-direction: row;
+                    background: #F2F2F2;
+                    color: #FFBF00;
+                    font-size: 0.8em;
+                }
+            }
+            @media screen and (max-width: 800px) {
+                .security-issues {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -moz-flex;
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-direction: column;
+                    background: #D8D8D8;
+                    color: #F5A9A9;
+                    font-size: 1.1em;
+                }
+                .precautions {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -moz-flex;
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-direction: column;
+                    background:#E0F8EC;
+                    color:#2E2EFE;
+                    font-size: 1.1em;
+                }
+            }
+            @media screen and (min-width: 1000px) {
+                .security-issues {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -moz-flex;
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-direction: row;
+                    background: #F7D358;
+                    color: #8181F7;
+                    font-size: 1.3em;
+                }
+                .precautions {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -moz-flex;
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-direction: row;
+                    background:#F6CEF5;
+                    color:#5858FA;
+                    font-size: 1.3em;
+                }
+            }
+	</style>
+    </head>
+    <body>
+        <header>
+            <h1 align="center"> WiFi Hotspot Security Vulnerabilities & Precautions </h1>
+        </header>
+        <section class="security-issues">
+            <article>
+                <header>
+                    <h2> Evil Twin: </h2>
+                <header> 
+                <p>
+                    <a href="https://en.wikipedia.org/wiki/Evil_twin_(wireless_networks)">Evil twin </a> is a term for a rogue Wi-Fi access point that  appears to be a legitimate one offered on the premises, but actually has been set up to eavesdrop on wireless communications. 
+                    An evil twin is the wireless version of the phishing scam. 
+                    An attacker fools wireless users into connecting a laptop or mobile phone to a tainted hotspot by posing as a legitimate provider. This type of evil 
+                    twin attack may be used to steal the passwords of unsuspecting users by either snooping the communication link or by phishing, 
+                    which involves setting up a fraudulent web site and luring people there.       
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2> Man in the Middle Attack: </h2> 
+                </header>
+                <p>
+                    <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">Man-in-the-middle </a>attack is an attack where the attacker secretly relays and possibly alters the communication between two parties who believe they are directly communicating with each other. In this form of attack, attacker will setup an access point similar to the one public hotspot and wait for the user to connect to it. Once the user is connected, the attacker can then monitor the network
+                    traffic.</p>
+            </article>
+            <article>
+                <header>
+                    <h2> ARP Spoofing: </h2>
+                </header>
+                <p>
+                     <a href="https://en.wikipedia.org/wiki/ARP_spoofing">Address Resolution Protocolor(ARP) </a> method redirects the network traffic to the hacker, modifying it or blocking it altogether without being detected. ARP spoofing is often used to open the door for other kinds of attacks such as sidejacking.</p>
+            </article>          
+            <article>           
+                <header>
+                    <h2> Rogue ad hoc networks: </h2>
+                </header>
+                <p>
+                    With names like "Free Public WiFi," these networks can turn up wherever there are public WiFi hotspots and can be used to trick unsuspecting WiFi users into connecting to them. Not all ad hoc networks are created by hackers. But it's impossible to distinguish the real ones from the fakes. </p>
+            </article>          
+        </section>
+        <section class="precautions">
+            <article>
+                <header>
+                    <h2> Precautions: </h2>
+                </header>
+                <p>
+                    As mentioned in <a href="http://blog.lifestore.aol.com/2013/03/10/public-wifi-hotspot-security/">AOL blog</a>, following are some of the precautions one should take
+                    <ul>
+                        <li> Before you log in to any hotspot, make sure your firewall is turned on, and your virus and malware protection is up to date </li>
+                        <li> Use unique passwords for every website, composed of at least 12 upper and lower case letters, numbers and symbols </li>
+                        <li> Check with the hotspot vendor to ensure the network you're connecting to is the real one, not a fake designed to steal your personal information</li>
+                        <li> Adjust your laptop and mobile devices to disable any settings that automatically connect to any available network </li>
+                        <li> Before you log into a hotspot, turn off file and printer sharing features so that others on the same network won't be able to access your personal information </li>
+                        <li> Only use websites that are encrypted – ones that begin with https, not http, and display a security icon such as a padlock </li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+
+<div align="center">
+    <h4 span style="color:blue" ><a href="http://dblab.itu.edu/home/kaushik/labs/index.html">Back to Labs Menu</a></h4>
+    <h4 align="center">&copy; Jyoti Kaushik </h4>
+</div>
+    </body>
+</html>
+

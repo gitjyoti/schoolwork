@@ -1,0 +1,20 @@
+/**Create an external style sheet (style6.css) to contain a class and an ID to format the document with a background color, text color,
+font family, font size, font style and font weight. Hyperlinks should have a different background color and text decoration. When moving 
+the mouse over the link, a different color is shown. Configure the h1 heading to have a background color with a text color.The content must
+display the movie name in an h1 tag. Use the class and the ID with the div to format the description of the movie with the main actors and 
+actresses. The page should have a hyperlink to a Website about the movie.**/
+
+/**class id**/
+.movie{background-color: peachpuff;color:tomato;font-family:serif;font-size: medium; font-style: times; font-weight: bolder;}
+#cast{background-color: rebbeccapurple;color:indianred;font-family:sans-serif;font-size: large; font-style: times; font-weight: bolder;}
+
+/**links **/
+a{color:tomato ;background-color:LemonChiffon ;}
+a:hover{color:orangered;background-color: Moccasin ;}
+
+/**h1**/
+h1{background-color: seashell; color:orangered; text-align: center;}
+
+h5{font-size:20px;}
+h4 a{color:blue;} h4{text-align:center;}
+body{background-color: beige}

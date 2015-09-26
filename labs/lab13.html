@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset= "UTF-8">
+
+	<title>Lab13:Registration Form</title>
+	 <!--       Use the header tag to display the heading for the form.
+    Use the section tag to include the form (use label and fieldset):
+    Name     Address     Email     Phone     Website     color      datalist     Calendar     Comments (use multi-line input)     Submit and Reset buttons   -->
+  
+ <style type="text/css"> 
+  
+#sec1{height:480px;width:600px;margin:10px;text-shadow:2px 2px 10px lightskyblue;opacity:0.6;border-color:blue; border-width:15px;border-style:ridge;border-radius:20px;background-position: top right, bottom left;color: darkblue;}
+
+h1{color:red;}
+   </style>
+
+
+
+</head>
+<body>
+<div align="center">
+<header>
+<h1>Registration Form</h1>
+</header>
+<section id="sec1">
+	<form action="http://itu.lewebcafe.com/sen910/form.php " method="post">
+		<fieldset>
+			<label for="name">Name:</label><br>
+			<input type="text" id="name"><br>
+
+			<label for="address">Address:</label><br>
+			<input type="text" id="address"><br>
+
+
+			<label for="email">Email:</label><br>
+			<input type="email" id="email"><br>
+
+			<label for="phone">Phone:</label><br>
+			<input type="tel" id="phone"><br>
+
+			<label for="website">Website:</label><br>
+			<input type="url" id="website"><br>
+
+			<label for="color">Color:</label><br>
+			<input type="color" id="color"><br>
+
+			<label for="datalist">Ethinicity:</label><br>
+			
+				<datalist>
+					<option>Hispanic</option>
+					<option>Asian</option>
+					<option>American</option>
+
+				</datalist><br>
+
+			<label for="calender">Date:</label><br>
+			<input type="date" id="calender"><br>
+
+			<label for="comment">Comment:</label><br>
+			<textarea name="comment" id="comment" rows="3" cols="50"></textarea><br>
+
+			<input type="submit" id="sub">
+			<input type="reset" id="set">
+
+		</fieldset>
+	</form>
+
+</section>
+
+	<h4 span style="color:blue" ><a href="http://dblab.itu.edu/home/kaushik/labs/index.html">Back to Labs Menu</a></h4>
+	<h4 align="center">&copy; Jyoti Kaushik	</h4>
+</div>
+</body>
+</html>
+
+
